@@ -2,24 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "api/index.php",
+      "src": "index.php",
       "use": "@vercel/php"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/api/index.php"
+      "dest": "/index.php"
     }
-  ],
-  "env": {
-    "APP_NAME": "Gridspace",
-    "APP_ENV": "production",
-    "APP_DEBUG": "false",
-    "APP_URL": "https://gridspace-five.vercel.app",
-    "CACHE_DRIVER": "array",
-    "SESSION_DRIVER": "cookie",
-    "LOG_CHANNEL": "stderr",
-    "QUEUE_CONNECTION": "sync"
-  }
+  ]
 }
